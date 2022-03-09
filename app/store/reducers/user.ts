@@ -1,18 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 const user = createSlice({
-    initialState: {
-        loggedIn: !!localStorage.getItem('token'),
+  initialState: {
+    loggedIn: false,
+  },
+  name: 'user',
+  reducers: {
+    login(state, {payload}) {
+      console.log('🚀 ~ file: user.ts ~ line 9 ~ login ~ payload', payload);
+      state.loggedIn = true;
     },
-    name: 'user',
-    reducers: {
-        login(state, { payload }) {
-            state.loggedIn = true;
-        },
-        logout(state, action) {
-            localStorage.removeItem('token');
-            state.loggedIn = false;
-        },
+    logout(state, action) {
+      console.log('🚀 ~ file: user.ts ~ line 13 ~ logout ~ action', action);
+      state.loggedIn = false;
     },
+  },
 });
-export const { login, logout } = user.actions;
+export const {login, logout} = user.actions;
 export default user.reducer;
