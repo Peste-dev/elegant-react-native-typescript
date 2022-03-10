@@ -16,7 +16,8 @@
       "i18n": ["./app/i18n/*"],
       "routes": ["./app/routes/*"],
       "store": ["./app/store/*"],
-      "view": ["./app/view/*"]
+      "view": ["./app/view/*"],
+      "components": ["./app/components/*"]
     },
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
