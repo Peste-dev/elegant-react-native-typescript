@@ -1,10 +1,9 @@
+import App from '@app/app';
+import { OfflineNotice } from '@app/components';
+import store from '@app/store';
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux';
-
-import App from './app/app';
-import { OfflineNotice } from './app/components';
-import store from './app/store';
 
 const _App = () => {
     const queryClient = new QueryClient();

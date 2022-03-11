@@ -1,8 +1,7 @@
+import { logout } from '@app/store/reducers/user';
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useDispatch } from 'react-redux';
-
-import { logout } from '../store/reducers/user';
 
 const AuthNavigator = () => {
     const dispatch = useDispatch();
